@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license = 'GPL'
 
   s.bindir = 'bin'
-  s.executables = %w(pdftk)
+  s.executables = %w(pdftk pdftk-linux-x86-64 libgcj.so.7rh)
 
-  s.files = %w(lib/pdftk-binary.rb bin/pdftk libexec/pdftk-linux-x86-64)
+  s.files = %w(lib/pdftk-binary.rb bin/pdftk bin/pdftk-linux-x86-64)
 end

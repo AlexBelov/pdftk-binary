@@ -8,7 +8,7 @@ arch = case RUBY_PLATFORM
        end
 
 args = ARGV.map { |x| x.include?(' ') ? "'" + x + "'" : x }
-cmd = File.expand_path "#{File.dirname(__FILE__)}/../libexec/pdftk-#{arch}"
-ldpath = File.expand_path "#{File.dirname(__FILE__)}/../libexec"
+cmd = File.expand_path "#{File.dirname(__FILE__)}/pdftk-#{arch}"
+ldpath = File.expand_path "#{File.dirname(__FILE__)}/"
 
 exec({ 'LD_LIBRARY_PATH' => ldpath }, "#{cmd} #{args.join(' ')}")
